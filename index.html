@@ -1,7 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en"></html>
+
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Parallax Effect</title>
+    <link rel="stylesheet" href="style.css">
     <title>Vandale Tech</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -28,7 +34,19 @@
 </head>
 
 <body>
-    <h1>Coming Soon.</h1>
+    <div class="hero-image"></div>
+    <div class="rellax parallax-el" data-rellax-speed="5"></div>
+    <div class="rellax text" data-rellax-speed="10"></div>
+    <div class="rellax clouds" data-rellax-speed="8"></div>
+    <div class="whitespace"></div>
+    <div class="content">
+        <h1 style="font-family: 'Open Sans', sans-serif; padding: 30px ">Coming Soon...</h1>
+        
+    </div>
+    <script src="rellax.min.js"></script>
+    <script type="text/javascript">
+        var rellax = new Rellax('.rellax');
+    </script>
 </body>
 
 </html>
